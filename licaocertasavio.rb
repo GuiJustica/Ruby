@@ -140,7 +140,9 @@ describe Economia do
             puts " Economia ->" + economia.bonus
         [else
             economia.trganha
+            puts "FOI"
             puts " Economia ->" + economia.bonus]
+
         end
 
 
