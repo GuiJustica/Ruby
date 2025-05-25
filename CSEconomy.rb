@@ -96,74 +96,27 @@ end
 
 describe Economia do
 
-    it "Ct ganha pistol" do
-
-        # economia = Economia.new
-
-        # economia.ctganha
-        # economia.ctganha
-
-        # expect(economia.ct_perde).to eq 0
-        # expect(economia.tr_perde).to eq 3
-        # economia.bonus
-
-
-
-
-
-
-    end
-
-    it "Tr ganha pistol" do
-
-        # economia = Economia.new
-
-        # economia.trganha
-
-        # expect(economia.ct_perde).to eq 2
-        # expect(economia.tr_perde).to eq 0
-        # economia.bonus
-
-
-    end
-
-
-
-    it "Jogo Imaginario" do
-
+    it "Jogo" do
         economia = Economia.new
-
         puts"Quem ganhou o round? \n 1-ct \n 2-tr"
         howWon = gets.chomp
-        if howWon == 1 then
+
+        puts howWon
+
+        if howWon == "1"
             economia.ctganha
-            puts " Economia ->" + economia.bonus
-        [else
+            puts " Economia ->" + economia.bonus.to_s
+        elsif howWon == "2"
             economia.trganha
-            puts "FOI"
-            puts " Economia ->" + economia.bonus]
+            puts "Economia ->" + economia.bonus.to_s
+        else
+            puts "Selecione um vencedor do round!"
+
+            # expect(economia.ct_perde).to eq 2
+            # expect(economia.tr_perde).to eq 2
 
         end
-
-
-
-        # economia.ctganha
-        # economia.ctganha
-        # economia.ctganha
-        # economia.trganha
-        # economia.trganha
-        # economia.trganha
-        # economia.ctganha
-        # economia.bonus
-
-        # expect(economia.ct_perde).to eq 2
-        # expect(economia.tr_perde).to eq 2
-
-
-    end
-
-
-
+    end
 
 
 
